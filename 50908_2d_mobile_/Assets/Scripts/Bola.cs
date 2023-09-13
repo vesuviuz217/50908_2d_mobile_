@@ -7,6 +7,9 @@ public class Bola : MonoBehaviour
 
     public bool isRigth;
     public float speed;
+
+    public Transform pontoD;
+    public Transform pontoE;
     void Start()
     {
         
@@ -26,6 +29,10 @@ public class Bola : MonoBehaviour
         }
 
         if(Input.GetMouseButtonDown(0))
+        {
+            isRigth = !isRigth;
+        }
+        if(Vector2.Distance(transform.position,pontoE.position) < 0.1f)
         {
             isRigth = !isRigth;
         }
