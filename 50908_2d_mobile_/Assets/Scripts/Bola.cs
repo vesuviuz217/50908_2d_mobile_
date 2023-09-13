@@ -32,7 +32,10 @@ public class Bola : MonoBehaviour
         {
             isRigth = !isRigth;
         }
-        if(Vector2.Distance(transform.position,pontoE.position) < 0.1f)
+        if(Vector2.Distance(transform.position,pontoE.position) < 0.1f || if (Vector2.Distance(transform.position, pontoD.position) < 0.1f)
+            {
+                isRigth = !isRigth;
+            }
         {
             isRigth = !isRigth;
         }
