@@ -9,13 +9,12 @@ public class Obstaculo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.Rotate(new Vector3(0, 0, Random.Range(-90, 90)));
+        transform.Rotate(new Vector3(0, 0, Random.Range(-145, -45)));
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         rig.MovePosition(transform.position + transform.right * speed * Time.deltaTime);
     }
 }
-s
