@@ -15,6 +15,7 @@ public class Obstaculo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rig.MovePosition(transform.position + Vector3.right * speed);
+        rig.MovePosition(transform.position + transform.right * speed * Time.deltaTime);
     }
 }
+s
