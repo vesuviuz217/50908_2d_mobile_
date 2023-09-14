@@ -24,6 +24,7 @@ public class Spawn : MonoBehaviour
         {
             GameObject go = Instantiate(prefab, transform.position, transform.rotation);
             Destroy(go, 5f);
+            timeCount = 0;
         }
     }
 }

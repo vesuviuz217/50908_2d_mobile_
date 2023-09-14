@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rig: {fileID: 2522293020029835975}
-  speed: 0.1
+  speed: 2
 --- !u!114 &2522293020029835968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rig: {fileID: 2522293020029835975}
-  speed: 0.1
+  speed: 2
 --- !u!1 &2522293020570540802
 GameObject:
   m_ObjectHideFlags: 0
