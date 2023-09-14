@@ -9,12 +9,20 @@ public class Obstaculo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.Rotate(new Vector3(0, 0, Random.Range(-135, -30)));
+        transform.Rotate(new Vector3(0, 0, Random.Range( -110, -10)));
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         rig.MovePosition(transform.position + transform.right * speed * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            Debug.Log("Bateu!!!");
+        }
     }
 }
