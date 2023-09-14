@@ -11,4 +11,12 @@ public class Coletavel : MonoBehaviour
     {
         rig.MovePosition(transform.position + Vector3.down * speed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            GameController.instance.AddScore();
+        }
+    }
 }

@@ -20,9 +20,9 @@ public class Obstaculo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if(collision.CompareTag("Player"))
         {
-            Debug.Log("Bateu!!!");
+           GameController.instance.ShowGameOver();
         }
     }
 }
